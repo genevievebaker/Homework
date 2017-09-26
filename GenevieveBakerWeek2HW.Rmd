@@ -1,0 +1,40 @@
+---
+title: "GenevieveBakerWeek2HW"
+output: html_document
+---
+
+#Week2 HW by Genevieve that is Due 9/14
+#It is 9/26, I am learning!!
+#Explore databases
+```{r}
+library(help = datasets)
+```
+#I chose data set ChickWeight
+```{r}
+data ("ChickWeight")
+View(ChickWeight)
+
+names(ChickWeight)
+```
+# Names() lists the names of the variables of the data set
+#Create a summary of the variables
+```{r}
+summary(ChickWeight)
+```
+#I can see the mean, median, and max of the variables
+#Pick a couple of variables to plot
+```{r}
+plot1 <- ggplot(ChickWeight, aes(weight, Diet))
+plot2 <- plot1+geom_point()
+plot2
+
+```
+
+```{r}
+plot1 <- ggplot(ChickWeight, aes(Diet, Time))
+plot2 <- plot1+geom_point()
+plot2
+
+```
+
+#both these plots look really wierd
